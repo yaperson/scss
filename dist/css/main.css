@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #272727;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 400;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  margin: 0 auto;
+}
+.main .main__paragraph1, .main .main__paragraph2 {
+  font-weight: 700;
+  transition: 0.2s;
+  padding: 5px;
+}
+.main .main__paragraph1:hover, .main .main__paragraph2:hover {
+  color: red;
+  transition: 0.2s;
+}
+.main .main__paragraph2:hover {
+  color: blue;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.light {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
